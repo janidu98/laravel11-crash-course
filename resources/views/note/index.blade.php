@@ -20,5 +20,8 @@
             </div>
             @endforeach
         </div>
+
+        <!-- pagination -->
+        {{ $notes->links() }}
     </div>
 </x-layout>
