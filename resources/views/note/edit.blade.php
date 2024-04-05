@@ -1,6 +1,6 @@
-<x-layout>
-    <div class="note-container single-note">
-        <h1>Edit Your Note</h1>
+<x-app-layout>
+    <div class="note-container single-note py-4">
+        <h1 class="text-3xl">Edit Your Note</h1>
         <form action="{{ route('note.update', $note) }}" method="POST" class="note">
             @csrf
             @method('PUT')
@@ -13,4 +13,4 @@
             </div>
         </form>
     </div>
-</x-layout>
+</x-app-layout>

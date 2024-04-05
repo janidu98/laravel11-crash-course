@@ -1,5 +1,5 @@
-<x-layout>
-    <div class="note-container single-note">
+<x-app-layout>
+    <div class="note-container single-note py-4">
         <div class="note-header">
             <h1>Note: {{ $note->created_at }}</h1>
             <div class="note-buttons">
@@ -17,4 +17,4 @@
             </div>
         </div>
     </div>
-</x-layout>
+</x-app-layout>
