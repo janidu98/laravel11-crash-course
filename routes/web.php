@@ -4,6 +4,8 @@ use App\Http\Controllers\NoteController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+Route::redirect('/', '/note')->name('dashboard');
+
 Route::middleware(["auth","verified"])->group(function () 
 {
     // Route::get('/note', [NoteController::class,'index'])->name('note.index');
